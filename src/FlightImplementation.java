@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class AirTrafficControl {
+public class FlightImplementation {
 
 	/**
 	 * @param args
