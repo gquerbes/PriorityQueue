@@ -3,19 +3,21 @@ public class Flight {
 
     private String flightNumber;
     private boolean connectingFlight;
-    private long connectionPeriod; 
+    private int connectionPeriod; 
     
     public Flight(String flightNumber, boolean connectingFlight){
         this.flightNumber = flightNumber;
         this.connectingFlight = connectingFlight;
     }
-    public boolean setConnectionPeriod(long p){
+    public boolean setConnectionPeriod(int p){
     	if (p < PQEntry.DEFAULT_KEY) {
     		connectionPeriod = p;
     		return true;
     	}
     	else return false;
     }
+    
+    public boolean getConnectingFlight(){return connectingFlight;}
     public long getConnectionPeriod() { return connectionPeriod; }
     
     public String getFlightNumber() {

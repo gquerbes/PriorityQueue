@@ -2,7 +2,7 @@
 public class PQEntry {
 	private long key; 
 	private Flight val; 
-	public static final long DEFAULT_KEY = 1000000; //Indicates a very low priority --used for non-connective flights.
+	public static final int DEFAULT_KEY = 1000000; //Indicates a very low priority --used for non-connective flights.
 	
 	public PQEntry() {}
 	
@@ -12,7 +12,12 @@ public class PQEntry {
 	}
 	
 	private void calcKey(){
-		//TODO part
+		if(val.getConnectingFlight()){
+			key = val.getConnectionPeriod();
+		}
+		else if (!val.getConnectingFlight()){
+			key = DEFAULT_KEY;
+		}
 	}
 	
 	public Flight getValue() {return val; }
