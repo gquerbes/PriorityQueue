@@ -9,11 +9,11 @@ public class FlightImplementation {
 	 * 
 	 * Once a user is done entering all the flight info, the system will print out the flights 
 	 * as they are queued up
-	 * Gabriel Querbes
-	 *Daniel de Souz
-	 *Ishan Shams
-	 *Jack Carrubba
-	 *Jake Rose
+	 * Gabriel Querbes GNUM: G008019490   email: Gquerbes@masonlive.gmu.edu
+	 *Daniel de Souz   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Ishan Shams   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Jack Carrubba   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Jake Rose    GNUM: GXXXXXX   email: XXXXXX.gmu.edu
 	 */
 	public static void main (String[] args){
 		UnsortedPriorityQueue PQ = enterFlightInfo();

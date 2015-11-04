@@ -1,5 +1,13 @@
 import java.util.*;
 
+/**
+ * @author gabrielquerbes
+  * Gabriel Querbes GNUM: G008019490   email: Gquerbes@masonlive.gmu.edu
+	 *Daniel de Souz   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Ishan Shams   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Jack Carrubba   GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+	 *Jake Rose    GNUM: GXXXXXX   email: XXXXXX.gmu.edu
+ */
 public class UnsortedPriorityQueue  {
 	private LinkedList<PQEntry> queue;
 	
