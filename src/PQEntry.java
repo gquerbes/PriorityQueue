@@ -11,6 +11,13 @@ public class PQEntry {
 		calcKey();
 	}
 	
+	
+	/**
+	 * Calculates and sets key based on the connection period based in minutes,
+	 * If the flight does not connect it will be given the default key.
+	 * Reasoning: connection period is the only metric used to determine the priority
+	 * because connection period is only used if a flight is connecting.
+	 */
 	private void calcKey(){
 		if(val.getConnectingFlight()){
 			key = val.getConnectionPeriod();

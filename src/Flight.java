@@ -17,7 +17,7 @@ public class Flight {
     	else return false;
     }
     
-    public boolean getConnectingFlight(){return connectingFlight;}
+    public boolean getConnectingFlight(){return connectingFlight;}//added to use in calcKey method
     public long getConnectionPeriod() { return connectionPeriod; }
     
     public String getFlightNumber() {
